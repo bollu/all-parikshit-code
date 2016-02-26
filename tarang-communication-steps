@@ -1,0 +1,6 @@
+1. enter command mode with '+++'
+2. enable IO pins with 'ATIDxx' eg. 'ATID02'. response should be 'OK'
+3. Write parametets to memory using 'ATGWR'
+4. exit command mode with 'ATGEX'
+
+'ATNCH' <Enter> => {Current Value} <CR> (Read Channel)

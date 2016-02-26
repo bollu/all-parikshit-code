@@ -1,0 +1,1549 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"OU",
+				"OUTPUT_TO_LOGGING_SERIAL_1"
+			],
+			[
+				"INTER",
+				"INTERRUPT_PIN"
+			],
+			[
+				"sta",
+				"stale_index"
+			],
+			[
+				"shiftLe",
+				"shiftLeftUniv"
+			],
+			[
+				"shift",
+				"shiftRightUniv"
+			],
+			[
+				"foc",
+				"focusInner"
+			],
+			[
+				"innerBe",
+				"innerBefores"
+			],
+			[
+				"inne",
+				"innerLength"
+			],
+			[
+				"len",
+				"lengthRingZipper"
+			],
+			[
+				"merg",
+				"mergeRingZipper"
+			],
+			[
+				"mer",
+				"mergeRingZipper"
+			],
+			[
+				"shif",
+				"shiftRight"
+			],
+			[
+				"focus",
+				"focusIndexRingZipper"
+			],
+			[
+				"make",
+				"makeFiniteUniverse"
+			],
+			[
+				"shiftRi",
+				"shiftRightUniv"
+			],
+			[
+				"shiftR",
+				"shiftRightUniv"
+			],
+			[
+				"inn",
+				"InnerDim"
+			],
+			[
+				"cen",
+				"centerOuter"
+			],
+			[
+				"shi",
+				"shiftRight"
+			],
+			[
+				"focu",
+				"focusAt"
+			],
+			[
+				"Ring",
+				"RingZipper"
+			],
+			[
+				"nei",
+				"neighbourCount"
+			],
+			[
+				"lef",
+				"left_leaves"
+			],
+			[
+				"ex",
+				"expected_val"
+			],
+			[
+				"num",
+				"num_leaves_left"
+			],
+			[
+				"new",
+				"newnode_leaf"
+			],
+			[
+				"cur",
+				"current_elem	statement"
+			],
+			[
+				"piv",
+				"pivot_elem	statement"
+			],
+			[
+				"response",
+				"response_data	statement"
+			],
+			[
+				"cu",
+				"current_quaternion	statement"
+			],
+			[
+				"v",
+				"velocity_quaternion	statement"
+			],
+			[
+				"title",
+				"title_widget	statement"
+			],
+			[
+				"_ne",
+				"_need_solver_recreate	statement"
+			],
+			[
+				"_widh",
+				"_width_stay	statement"
+			],
+			[
+				"labl",
+				"label_widget	statement"
+			],
+			[
+				"wid",
+				"widget_top_right	statement"
+			],
+			[
+				"_hei",
+				"_height_grid	statement"
+			],
+			[
+				"_ad",
+				"_add_griddint_height_constraints	function"
+			],
+			[
+				"Int",
+				"IntModulo"
+			],
+			[
+				"heigh",
+				"height_grid	param"
+			],
+			[
+				"widget",
+				"widget_grid	statement"
+			],
+			[
+				"grid",
+				"grid_size	function"
+			],
+			[
+				"space_fil",
+				"space_filler_x_axis	statement"
+			],
+			[
+				"_height",
+				"_height_stay	statement"
+			],
+			[
+				"_hie",
+				"_height_stay	statement"
+			],
+			[
+				"widh",
+				"width_max	function"
+			],
+			[
+				"width",
+				"width_limit_expr	statement"
+			],
+			[
+				"widge",
+				"widget_left	statement"
+			],
+			[
+				"stre",
+				"stretch_height_grid	statement"
+			],
+			[
+				"str",
+				"stretch_w	statement"
+			],
+			[
+				"va",
+				"value_vectorized	statement"
+			],
+			[
+				"hei",
+				"height_grid	statement"
+			],
+			[
+				"width_",
+				"width_grid	statement"
+			],
+			[
+				"var",
+				"vargrid	statement"
+			],
+			[
+				"gen",
+				"genRootFixed"
+			],
+			[
+				"x",
+				"xspan	statement"
+			],
+			[
+				"w_",
+				"w_var	forflow"
+			],
+			[
+				"var_",
+				"var_grid	statement"
+			],
+			[
+				"widg",
+				"widget_spacer_bottom	statement"
+			],
+			[
+				"wdge",
+				"widget_top_left	statement"
+			],
+			[
+				"fi",
+				"filtered"
+			],
+			[
+				"filt",
+				"filterFn"
+			],
+			[
+				"getSa",
+				"getSavedIter"
+			],
+			[
+				"mod",
+				"moduloList"
+			],
+			[
+				"ge",
+				"getSaved"
+			],
+			[
+				"height_X",
+				"height_xlabel	statement"
+			],
+			[
+				"yaxi",
+				"yaxis_widget	statement"
+			],
+			[
+				"xaxi",
+				"xaxis_widget	statement"
+			],
+			[
+				"space_",
+				"space_filler_title	statement"
+			],
+			[
+				"yla",
+				"ylabel_widget	statement"
+			],
+			[
+				"space",
+				"space_filler_x_axis	statement"
+			],
+			[
+				"ylabel_wid",
+				"ylabel_widget"
+			],
+			[
+				"y_",
+				"ylabel_widget"
+			],
+			[
+				"titl",
+				"title_widget"
+			],
+			[
+				"xla",
+				"xlabel_widget	statement"
+			],
+			[
+				"res",
+				"resize_widget	function"
+			],
+			[
+				"lao",
+				"layout_array	function"
+			],
+			[
+				"prev",
+				"prev_widget_id	statement"
+			],
+			[
+				"he",
+				"height	function"
+			],
+			[
+				"_var",
+				"_var_h_rect	statement"
+			],
+			[
+				"_va",
+				"_var_w_rect	statement"
+			],
+			[
+				"_var_",
+				"_var_w_rect	statement"
+			],
+			[
+				"add_er",
+				"add_edit_var	function"
+			],
+			[
+				"_upda",
+				"_update_child_widget_constraints	function"
+			],
+			[
+				"height",
+				"height_max	function"
+			],
+			[
+				"_wid",
+				"_width_limits"
+			],
+			[
+				"ti",
+				"title_widget	statement"
+			],
+			[
+				"add_",
+				"add_widget	function"
+			],
+			[
+				"remove",
+				"remove_widget	function"
+			],
+			[
+				"max_",
+				"max_width	statement"
+			],
+			[
+				"min_",
+				"min_width	function"
+			],
+			[
+				"fixed",
+				"fixed_width	function"
+			],
+			[
+				"max",
+				"max_width	function"
+			],
+			[
+				"with",
+				"width_slop	statement"
+			],
+			[
+				"fixed_",
+				"fixed_height	function"
+			],
+			[
+				"_update",
+				"_update_child_widgets_except"
+			],
+			[
+				"lay",
+				"layout_array"
+			],
+			[
+				"streth",
+				"stretch_h_eqn_terms	statement"
+			],
+			[
+				"stret",
+				"stretch_w_eqn_terms	statement"
+			],
+			[
+				"terms",
+				"terms_arr	forstmt"
+			],
+			[
+				"prev_",
+				"prev_widget	statement"
+			],
+			[
+				"lat",
+				"layout_array	function"
+			],
+			[
+				"prev_wi",
+				"prev_widget_key	statement"
+			],
+			[
+				"la",
+				"layout_array	function"
+			],
+			[
+				"stretch",
+				"stretch_w_eqns	statement"
+			],
+			[
+				"total_",
+				"total_h_eqns	statement"
+			],
+			[
+				"add",
+				"add_widget	function"
+			],
+			[
+				"row",
+				"row_span	param"
+			],
+			[
+				"min",
+				"min_width	function"
+			],
+			[
+				"exr",
+				"expression"
+			],
+			[
+				"width_va",
+				"width_var	statement"
+			],
+			[
+				"_wi",
+				"_width_limits	statement"
+			],
+			[
+				"widt",
+				"width_row	statement"
+			],
+			[
+				"wide",
+				"widget_top	statement"
+			],
+			[
+				"_virid",
+				"_viridis_data_raw	statement"
+			],
+			[
+				"abs",
+				"absolute	instance"
+			],
+			[
+				"colorbar_",
+				"colorbar_halfdim	statement"
+			],
+			[
+				"img_",
+				"img_dim	statement"
+			],
+			[
+				"canv",
+				"canvas_dim	statement"
+			],
+			[
+				"image_tra",
+				"image_transforms"
+			],
+			[
+				"bord",
+				"border_color	function"
+			],
+			[
+				"_bor",
+				"_border	statement"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "gyro_direct_read_arduino/gyro_direct_read_arduino.ino",
+			"settings":
+			{
+				"buffer_size": 14204,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/bollu/work/haskell-diagrams-cellular-automata/.gitignore",
+			"settings":
+			{
+				"buffer_size": 235,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "read_gyro_and_broadcast/read_gyro_and_broadcast.ino",
+			"settings":
+			{
+				"buffer_size": 10996,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "read-dmp-and-broadcast/read-dmp-and-broadcast.ino",
+			"settings":
+			{
+				"buffer_size": 11618,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "rein",
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rie",
+				"SublimeREPL: Io"
+			],
+			[
+				"syntax aru",
+				"Set Syntax: Arduino"
+			],
+			[
+				"arduino",
+				"Set Syntax: Arduino"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"user ",
+				"Preferences: Settings - User"
+			],
+			[
+				"matlab",
+				"Set Syntax: MATLAB"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"to spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"revea",
+				"Side Bar: Reveal File"
+			],
+			[
+				"sideb",
+				"Side Bar: Enable Syncing"
+			],
+			[
+				"file in se",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"toggle sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"ne",
+				"Anaconda: Next lint error"
+			],
+			[
+				"next lin",
+				"Anaconda: Next lint error"
+			],
+			[
+				"minimap",
+				"View: Toggle Minimap"
+			],
+			[
+				"toggle mi",
+				"View: Toggle Minimap"
+			],
+			[
+				"toggle si",
+				"View: Toggle Side Bar"
+			],
+			[
+				"lint",
+				"Anaconda: Next lint error"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"cmake",
+				"Set Syntax: CMake"
+			],
+			[
+				"mips",
+				"Set Syntax: MIPS"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"toggle s",
+				"View: Toggle Side Bar"
+			],
+			[
+				"nasm",
+				"Set Syntax: Assembly x86 (NASM)"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"disable ",
+				"Side Bar: Disable Syncing"
+			],
+			[
+				"repl clo",
+				"SublimeREPL: Clojure"
+			],
+			[
+				"repl cl",
+				"SublimeREPL: Clojure"
+			],
+			[
+				"shell",
+				"SublimeREPL: Shell"
+			],
+			[
+				"python",
+				"SublimeREPL: Python"
+			],
+			[
+				"repl shel",
+				"SublimeREPL: Shell"
+			],
+			[
+				"anaconda li",
+				"Anaconda: Next lint error"
+			],
+			[
+				"toggle min",
+				"View: Toggle Minimap"
+			],
+			[
+				"settings",
+				"Preferences: Settings - Default"
+			],
+			[
+				"settings ",
+				"Preferences: Settings - User"
+			],
+			[
+				"toggle ",
+				"View: Toggle Status Bar"
+			],
+			[
+				"toggle ta",
+				"View: Toggle Tabs"
+			],
+			[
+				"key ",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"key bind",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"packaing ",
+				"Package Control: Install Package"
+			],
+			[
+				"settings de",
+				"Preferences: Settings - Default"
+			],
+			[
+				"prefer",
+				"Preferences: Settings - User"
+			],
+			[
+				"anaconda",
+				"Anaconda: Find object usage"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 520.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": false,
+		"status_bar_visible": true
+	},
+	"expanded_folders":
+	[
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code",
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code/gyro_direct_read_arduino",
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code/matlab-plotter",
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code/read-dmp-and-broadcast",
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code/read_gyro_and_broadcast"
+	],
+	"file_history":
+	[
+		"/Users/bollu/work/haskell-diagrams-cellular-automata/upload-files.sh",
+		"/Users/bollu/work/haskell-diagrams-cellular-automata/src/config.toml",
+		"/Users/bollu/work/haskell-diagrams-cellular-automata/src/generate-static-site.sh",
+		"/Users/bollu/.vimrc",
+		"/Users/bollu/work/haskell-diagrams-cellular-automata/.gitignore",
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code/gyro_direct_read_arduino/main_loop.cpp",
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code/gyro_direct_read_arduino/MPU.cpp",
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code/gyro_direct_read_arduino/MPU.h",
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code/gyro_direct_read_arduino/MPU6050.h",
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code/gyro_direct_read_arduino/MPU6050/main_loop.cpp",
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code/read_gyro_and_broadcast/read_gyro_and_broadcast.ino",
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code/gyro_direct_read_arduino/MPU6050.cpp",
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code/gyro_direct_read_arduino/gyro_read.ino",
+		"/Users/bollu/work/parikshit/code/arduino-gyro-test-code/gyro_read/gyro_read.ino",
+		"/Users/bollu/Documents/Arduino/talk-to-tarang/talk-to-tarang.ino",
+		"/Users/bollu/reading/ADCS/Gyro/serial-settings-xbee",
+		"/Users/bollu/work/haskell-diagrams-cellular-automata/build-and-ghci.sh",
+		"/Users/bollu/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/bollu/temp/feb-4-attack/register.py",
+		"/Users/bollu/work/haskell-diagrams-cellular-automata/app/Main.hs",
+		"/Users/bollu/work/haskell-diagrams-cellular-automata/haskell-diagrams-cellular-automata.cabal",
+		"/Users/bollu/work/haskell-diagrams-cellular-automata/build-and-run.sh",
+		"/Users/bollu/work/BTS/untitled.html",
+		"/Users/bollu/temp/bts/q8.py",
+		"/Users/bollu/prog/vispy/examples/demo/gloo/mandelbrot.py",
+		"/Users/bollu/prog/vispy/examples/demo/gloo/mandelbrot",
+		"/Users/bollu/prog/haskell-diagrams/active/src/Data/Active.hs",
+		"/Users/bollu/prog/haskell-diagrams/active/README.markdown",
+		"/Users/bollu/work/1-IITB-coding-competition/OddManOut/testOddManOut.c",
+		"/Users/bollu/work/1-IITB-coding-competition/OpJumble/testOpJumble.c",
+		"/Users/bollu/work/1-IITB-coding-competition/Palindrome/testPalindrome.c",
+		"/Users/bollu/work/1-IITB-coding-competition/OddManOut/ReadMe",
+		"/Users/bollu/work/1-IITB-coding-competition/Palindrome/makefile",
+		"/Users/bollu/get-things-done.org",
+		"/Users/bollu/work/parikshit/proxy-server-parikshit.txt",
+		"/Volumes/SARVANI/Tarang-matlab-code/yolo.m",
+		"/Users/bollu/work/hawklings/loginion/binary-creation/build.js.sample",
+		"/Users/bollu/work/hawklings/loginion/binary-creation/build.js",
+		"/Users/bollu/work/hawklings/loginion/binary-creation/build-mac.js",
+		"/Users/bollu/temp/algorithms/merge-sort.py",
+		"/Users/bollu/prog/vispy/vispy/scene/cameras/perspective.py",
+		"/Users/bollu/prog/vispy/vispy/scene/widgets/widget.py",
+		"/Users/bollu/temp/hask-forall.hs",
+		"/Users/bollu/prog/vispy/vispy/util/config.py",
+		"/Users/bollu/prog/vispy/vispy/scene/widgets/grid.py",
+		"/Users/bollu/prog/vispy/examples/basics/plotting/grid_x_y_viewbox.py",
+		"/Users/bollu/temp/hask-playground/app/Main.hs",
+		"/Users/bollu/prog/vispy/vispy/testing/image_tester.py",
+		"/Users/bollu/.zshrc",
+		"/Users/bollu/prog/ghc/compiler/parser/Parser.y",
+		"/Users/bollu/prog/vispy/examples/basics/plotting/plot.py",
+		"/Users/bollu/prog/vispy/vispy/plot/plotwidget.py",
+		"/Users/bollu/prog/Coq/beginner.coq",
+		"/Users/bollu/prog/warp-haskell/warp.sh",
+		"/Users/bollu/work/Movie-Folder-Analyser/movie.py",
+		"/Users/bollu/work/iitb-control-server-migrate/sbhs-device-listener/server.py",
+		"/Users/bollu/work/iitb-control-server-migrate/sbhs-device-listener/sbhs",
+		"/Users/bollu/work/iitb-control-server-migrate/sbhs-device-listener/sbhs.py",
+		"/Users/bollu/temp/iitb-fossee-ldap-credentials",
+		"/Users/bollu/reading/1-IIIT-H-prep/1-IIIT-H-portion",
+		"/Users/bollu/work/iitb-control-server-migrate/0-server-reverse-proxy-vlabs.sh",
+		"/Users/bollu/temp/standard-webdev-template.txt",
+		"/Users/bollu/reading/IIIT-H-prep/1-IIIT-H-portion",
+		"/Users/bollu/prog/vispy/examples/basics/scene/axes_plot.py",
+		"/Users/bollu/projects/simulation-quaternion-spring/simulation.py",
+		"/Users/bollu/prog/vispy/vispy/util/transforms.py",
+		"/Users/bollu/projects/parikshit/weekly-task-list.org",
+		"/Users/bollu/projects/parikshit/parikshith-connection.md",
+		"/Users/bollu/projects/simulation-quaternion-spring/questions.md",
+		"/Users/bollu/Documents/parikshith-connection.md",
+		"/Users/bollu/temp/ion/ionextension mine/list.js",
+		"/Users/bollu/prog/vispy/vispy/util/quaternion.py",
+		"/Users/bollu/hobby-prog/pactmaker/client/index.html",
+		"/Users/bollu/prog/vispy/vispy/color/colormap.py",
+		"/Users/bollu/prog/vispy.js/.gitignore",
+		"/Users/bollu/prog/citra/README.md",
+		"/Users/bollu/prog/citra/CONTRIBUTING.md",
+		"/Users/bollu/temp/whatever.java",
+		"/Users/bollu/prog/vispy/examples/basics/plotting/grid_basic.py",
+		"/Users/bollu/prog/vispy/examples/basics/plotting/grid_uneven_col.py",
+		"/Users/bollu/prog/vispy/examples/basics/plotting/grid_holed.py",
+		"/Users/bollu/prog/vispy/examples/basics/plotting/grid_two_row_two_col_.py",
+		"/Users/bollu/temp/diagrams/diagram.hs",
+		"/Users/bollu/hobby-prog/th-groups/src/Main.hs",
+		"/Users/bollu/Documents/PAN-card-details",
+		"/Users/bollu/hobby-prog/th-groups/th-groups.cabal",
+		"/Users/bollu/hobby-prog/th-groups/stack.yaml",
+		"/Users/bollu/prog/vispy/examples/basics/scene/grid.py",
+		"/Users/bollu/hobby-prog/LoveCraft/CMakeLists",
+		"/Users/bollu/prog/vispy/vispy/visuals/gridlines.py",
+		"/Users/bollu/prog/mips-learning/bollu.mips",
+		"/Users/bollu/prog/vispy/vispy/ext/_bundled/cassowary/simplex_solver.py",
+		"/Users/bollu/hobby-prog/hask-lisp-interp/src/Main.hs",
+		"/Users/bollu/temp/hask-fix/fix.hs",
+		"/Users/bollu/temp/hask-fix/makefile",
+		"/Users/bollu/prog/questions-bansal.md",
+		"/Users/bollu/prog/questions.md",
+		"/usr/include/sys/syscall.h",
+		"/Users/bollu/hobby-prog/assembly/1-hello-world.asm",
+		"/Users/bollu/hobby-prog/assembly/2-c-bridge.asm",
+		"/Users/bollu/hobby-prog/assembly/1-hello-world.",
+		"/Users/bollu/temp/collect_authors_patches.sh",
+		"/Users/bollu/prog/vispy/examples/basics/plotting/grid-basic.py",
+		"/Users/bollu/vm/ubuntu1404/Vagrantfile",
+		"/Users/bollu/temp/killing/makefile",
+		"/Users/bollu/prog/vispy/vispy/scene/widgets/colorbar.py",
+		"/Users/bollu/temp/vispy-grid/grid-holed.py",
+		"/Users/bollu/temp/vispy-grid/grid-two-row-two-col.py",
+		"/Users/bollu/temp/vispy-grid/grid-x-y-viewbox.py",
+		"/Users/bollu/prog/vispy/examples/basics/plotting/grid.py",
+		"/Users/bollu/temp/killing/killing.hs",
+		"/Users/bollu/temp/killing.hs",
+		"/Users/bollu/prog/vispy/vispy/scene/widgets/axis.py",
+		"/Users/bollu/prog/pixeldruid/content/gsoc-vispy-week-6.md",
+		"/Users/bollu/temp/master-grid.py",
+		"/Users/bollu/temp/vispy-grid.py",
+		"/Users/bollu/temp/vispy-grid-axis.py",
+		"/Users/bollu/prog/pixeldruid/content/gsoc-vispy-report-6.md",
+		"/Users/bollu/temp/vispy-grid-counterexample",
+		"/Users/bollu/prog/vispy/examples/basics/plotting/scatter_histogram.py",
+		"/Users/bollu/prog/vispy/vispy/geometry/rect.py",
+		"/Users/bollu/temp/vispy-basic-plot.py",
+		"/Users/bollu/prog/vispy/.travis.yml",
+		"/Users/bollu/prog/vispy/vispy/scene/cameras/tests/test_perspective.py",
+		"/Users/bollu/prog/vispy/vispy/scene/widgets/label.py",
+		"/Users/bollu/prog/vispy/vispy/visuals/transforms/linear.py",
+		"/Users/bollu/prog/vispy/vispy/visuals/axis.py",
+		"/Users/bollu/prog/vispy/vispy/visuals/text/text.py"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"*.py"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"serial",
+			"OUTPUT_TO_SERIAL_1",
+			"DEBUG",
+			"OUTPUT_TO",
+			"OUTPUT_TO_SERIAL_1",
+			"OUTPUT_TO_LOGGING_SERIAL_1",
+			"DEBUG",
+			"broadcast_int16_serial2",
+			"Serial2.write",
+			"SERIAL_1_PRINT",
+			"1",
+			"OUTPUT_TO_LOGGING_SERIAL_1",
+			"Serial.print",
+			"Serial.Print",
+			"Serial1.Print",
+			"Serial.print",
+			"broadcast_int16",
+			"broadcast_mpu6050_reading",
+			"gyro",
+			"success",
+			"blinkState",
+			"MPUReading",
+			"read_from_mpu_6050",
+			"g_has_gyro_woken",
+			"UNO_INTERRUPT_PIN",
+			"INTERRUPT_PIN",
+			"interrupt",
+			"overflow",
+			"broadcast_mpu6050_reading",
+			"broadcast_int16",
+			"read_from_mpu_6050",
+			"MPUReading",
+			"log_mpu6050_real_readings",
+			"fifoBuffer",
+			"dmpGetGyro",
+			"areal",
+			"fifoCount",
+			"packetSize",
+			"mpuInterrupt",
+			"got interrup",
+			"pinMode",
+			"mpuIntStatus",
+			"packetSize",
+			"mpuInterrupt",
+			"dmpReady",
+			"attachInterrupt",
+			"isDmpDataReady",
+			"waiting for first",
+			"Serial.begin",
+			"wakeup",
+			"LED_PIN",
+			"LED_PINN",
+			"dmpDataReady",
+			"MPU6050_INCLUDE_DMP_MOTIONAPPS20",
+			"dmpInitialize",
+			"mpuInterrupt",
+			"dmpDataReady",
+			"MPU6050",
+			"reading",
+			"read_from_mpu_6050",
+			"log_mpu6050_real_readings",
+			"log_float",
+			"read_int16",
+			"uint8_t",
+			"__AVR__",
+			"#ifdef",
+			"broadcast_mpu6050_reading",
+			"log_int16",
+			"log_string",
+			"logFloat",
+			"logDouble",
+			"logInt16",
+			"ReadingRingbuf",
+			"DEBUG_PRINT",
+			"#ifdef DEBUG",
+			"#ifdef DEBUF",
+			"read_from_mpu_6050",
+			"broadcast_mpu6050_reading",
+			"#endif",
+			"readFromMPU6050",
+			"int16_t",
+			"int16_t ",
+			"GyroReading",
+			"Serial.print",
+			"Serial2",
+			"serial",
+			"Serial2",
+			"data",
+			"focusIndexRingZipper",
+			"iterate1",
+			"shiftLeft",
+			"mergeRingZipper",
+			"`",
+			"mergeRingZipper",
+			"iterate",
+			"mergeRingZipper",
+			"(Univ(univ))",
+			"qeqweqwe",
+			"()",
+			"FiniteUniverse",
+			"shiftRight",
+			"gridDim",
+			"makeFiniteUniverse",
+			"stepGrid",
+			"edit",
+			"shiftDownUniv",
+			"shiftRightUniv",
+			"Right",
+			"shiftRightUniv",
+			"lengthRingZipper",
+			"before",
+			"shiftLeft",
+			"FiniteZipper",
+			"func",
+			"at",
+			"FiniteUniverse",
+			"undefined",
+			"univ",
+			"shiftRight",
+			"undefined",
+			"shiftLe",
+			"undefined",
+			"Universe",
+			"interleave",
+			"    ",
+			"Zipper",
+			"shiftLeft",
+			"shiftRight"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"SERIAL_1_PRINT",
+			"_var_y",
+			"_var_x",
+			"_var_h",
+			"_var_w",
+			"self.var_h",
+			"_BorderVisual"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "gyro_direct_read_arduino/gyro_direct_read_arduino.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								550,
+								550
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Arduino-like IDE/Arduino.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/bollu/work/haskell-diagrams-cellular-automata/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "read_gyro_and_broadcast/read_gyro_and_broadcast.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10996,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9999,
+								10028
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Arduino-like IDE/Arduino.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "read-dmp-and-broadcast/read-dmp-and-broadcast.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11618,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								532,
+								532
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Arduino-like IDE/Arduino.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "parikshith-connection.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"mpu",
+				"gyro_direct_read_arduino/MPU6050.cpp"
+			],
+			[
+				"bu",
+				"build-and-run.sh"
+			],
+			[
+				"plo",
+				"examples/basics/plotting/plot.py"
+			],
+			[
+				"plot",
+				"vispy/plot/plotwidget.py"
+			],
+			[
+				"grid_x_",
+				"examples/basics/plotting/grid_x_y_viewbox.py"
+			],
+			[
+				"widget",
+				"vispy/scene/widgets/widget.py"
+			],
+			[
+				"gri",
+				"vispy/scene/widgets/grid.py"
+			],
+			[
+				"grid",
+				"vispy/scene/widgets/grid.py"
+			],
+			[
+				"widge",
+				"vispy/scene/widgets/widget.py"
+			],
+			[
+				"plotwi",
+				"vispy/plot/plotwidget.py"
+			],
+			[
+				"quater",
+				"vispy/util/quaternion.py"
+			],
+			[
+				"colormap",
+				"vispy/color/colormap.py"
+			],
+			[
+				"plot.py",
+				"examples/basics/plotting/plot.py"
+			],
+			[
+				"grid_ho",
+				"examples/basics/plotting/grid_holed.py"
+			],
+			[
+				"grid_",
+				"examples/basics/plotting/grid_basic.py"
+			],
+			[
+				"wid",
+				"vispy/scene/widgets/widget.py"
+			],
+			[
+				"grid_un",
+				"examples/basics/plotting/grid_uneven_col.py"
+			],
+			[
+				"plotw",
+				"vispy/plot/plotwidget.py"
+			],
+			[
+				"une",
+				"examples/basics/plotting/grid_uneven_col.py"
+			],
+			[
+				"two_ro",
+				"examples/basics/plotting/grid_two_row_two_col_.py"
+			],
+			[
+				"plot.p",
+				"examples/basics/plotting/plot.py"
+			],
+			[
+				"grid_two",
+				"examples/basics/plotting/grid_two_row_two_col_.py"
+			],
+			[
+				"grid_bas",
+				"examples/basics/plotting/grid_basic.py"
+			],
+			[
+				"grid.p",
+				"vispy/scene/widgets/grid.py"
+			],
+			[
+				"plot.",
+				"examples/basics/plotting/plot.py"
+			],
+			[
+				"grid.",
+				"examples/basics/scene/grid.py"
+			],
+			[
+				"gird",
+				"vispy/visuals/gridlines.py"
+			],
+			[
+				"grid_b",
+				"examples/basics/plotting/grid_basic.py"
+			],
+			[
+				"grid-bas",
+				"examples/basics/plotting/grid-basic.py"
+			],
+			[
+				"vispy/grid",
+				"vispy/scene/widgets/grid.py"
+			],
+			[
+				"clorbar",
+				"vispy/scene/widgets/colorbar.py"
+			],
+			[
+				"widgetsgrid",
+				"vispy/scene/widgets/grid.py"
+			],
+			[
+				"widgets/grid",
+				"vispy/scene/widgets/grid.py"
+			],
+			[
+				"rect",
+				"vispy/geometry/rect.py"
+			],
+			[
+				"scatt",
+				"examples/basics/plotting/scatter_histogram.py"
+			],
+			[
+				"examples/basics/plot",
+				"examples/basics/plotting/plot.py"
+			],
+			[
+				"test_pe",
+				"vispy/scene/cameras/tests/test_perspective.py"
+			],
+			[
+				".tra",
+				".travis.yml"
+			],
+			[
+				"grid.py",
+				"examples/basics/scene/grid.py"
+			],
+			[
+				"examples/basics/visuals/color",
+				"examples/basics/visuals/colorbar_visual.py"
+			],
+			[
+				"plotwid",
+				"vispy/plot/plotwidget.py"
+			],
+			[
+				"colorbar",
+				"vispy/visuals/colorbar.py"
+			],
+			[
+				"testing/runn",
+				"vispy/testing/_runners.py"
+			],
+			[
+				"colorbar_vis",
+				"examples/basics/visuals/colorbar_visual_types.py"
+			],
+			[
+				"examples/plot",
+				"examples/demo/plot/plot.py"
+			],
+			[
+				"basics/plot",
+				"examples/basics/plotting/plot.py"
+			],
+			[
+				"axis",
+				"vispy/visuals/axis.py"
+			],
+			[
+				"ext/cass",
+				"vispy/ext/cassowary.py"
+			],
+			[
+				"travs",
+				".travis.yml"
+			],
+			[
+				"scene/grid",
+				"examples/basics/scene/grid.py"
+			],
+			[
+				"color_tyes",
+				"examples/basics/visuals/colorbar_visual_types.py"
+			],
+			[
+				"border",
+				"vispy/visuals/border.py"
+			],
+			[
+				"test_colorbar",
+				"vispy/visuals/tests/test_colorbar.py"
+			],
+			[
+				"examplecolorbar",
+				"examples/basics/visuals/colorbar_visual.py"
+			],
+			[
+				"colorbarei",
+				"examples/basics/scene/colorbar_widget.py"
+			],
+			[
+				"colorbarv",
+				"examples/basics/visuals/colorbar_visual_types.py"
+			],
+			[
+				"colorbar_visua",
+				"examples/basics/visuals/colorbar_visual.py"
+			],
+			[
+				"bord",
+				"vispy/visuals/border.py"
+			],
+			[
+				"colorma",
+				"vispy/color/colormap.py"
+			],
+			[
+				"volorbar",
+				"vispy/visuals/colorbar.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "hackmani",
+		"selected_items":
+		[
+			[
+				"hackmani",
+				"~/prog/subl-projects/hackmanipal.sublime-project"
+			],
+			[
+				"has",
+				"~/prog/subl-projects/haskell-diagrams-cellular-automata.sublime-project"
+			],
+			[
+				"",
+				"~/prog/subl-projects/vispy.sublime-project"
+			],
+			[
+				"vis",
+				"~/prog/subl-projects/vispy.sublime-project"
+			],
+			[
+				"cyber",
+				"~/prog/cyberhawk/cyberhawk.sublime-workspace"
+			],
+			[
+				"cyb",
+				"~/prog/cyberhawk/cyberhawk.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 266.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
