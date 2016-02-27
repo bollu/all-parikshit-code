@@ -146,63 +146,46 @@ void broadcast_int16_serial2(int16_t value) {
     Serial2.write(high);
 }
 
-//return read success
-bool read_from_mpu_6050(MPUReading *reading) {
-        // if programming failed, don't try to do anything
-        if (!dmpReady) { 
-            return false;
-        }
 
-    // wait for MPU interrupt or extra packet(s) available
-    while (!mpuInterrupt && fifoCount < packetSize) {
-      SERIAL_1_PRINT("\nlooping, waiting for interrupt");
-      delay(10);
-  }
-    // reset interrupt flag and get INT_STATUS byte
-    mpuInterrupt = false;
-    mpuIntStatus = mpu.getIntStatus();
+void wakeupGyro() {
+    /*
+    //set power to wakeup
+    write_register(MPU6050_I2C_ADDRESS, MPU6050_PWR_MGMT_1, 0);
+    Wire.beginTransmission(MPU6050_I2C_ADDRESS);
+      Wire.write(MPU6050_PWR_MGMT_1);
+      Wire.write(0);
+      Wire.endTransmission();
+      Wire.requestFrom(MPU6050_I2C_ADDRESS, 1);
+     
 
-    // get current FIFO count
-    fifoCount = mpu.getFIFOCount();
 
-    // check for overflow (this should never happen unless our code is too inefficient)
-    if ((mpuIntStatus & 0x10) || fifoCount == 1024) {
-        // reset so we can continue cleanly
-        mpu.resetFIFO();
-        SERIAL_1_PRINT(F("FIFO overflow!\n"));
+    Serial.print("\nwaiting for gyro wakeup response...");
+    byte wakeup_state;
+    read_register(MPU6050_I2C_ADDRESS, MPU6050_PWR_MGMT_1, &wakeup_state, 1);
+    Serial.print("\nwoken up: ");
+    Serial.print(wakeup_state == 1);
 
-    // otherwise, check for DMP data ready interrupt (this should happen frequently)
-    } else if (mpuIntStatus & 0x02) {
-        // wait for correct available data length, should be a VERY short wait
-        while (fifoCount < packetSize) fifoCount = mpu.getFIFOCount();
+    Serial.print("\nrunning self test for gyro");    
+    int test_values[6];
+    self_test_mpu6050(test_values);
 
-        // read a packet from FIFO
-        mpu.getFIFOBytes(fifoBuffer, packetSize);
-        
-        // track FIFO count here in case there is > 1 packet available
-        // (this lets us immediately read more without waiting for an interrupt)
-        fifoCount -= packetSize;
+    Serial.print("\nconfiguring gyro settings");
+    write_register(MPU6050_I2C_ADDRESS, GYRO_CONFIG, 0);
+    write_register(MPU6050_I2C_ADDRESS, ACCEL_CONFIG, 0);
 
-        int16_t gyro[3];
-        mpu.dmpGetGyro(gyro, fifoBuffer);
-        reading.gyrox = gyro[0];
-        reading.gyroy = gyro[1];
-        reading.gyroz = gyro[2];
+    byte gyro_config_state;
+    read_register(MPU6050_I2C_ADDRESS, GYRO_CONFIG, &gyro_config_state, 1);
+    Serial.print("\ngyro configured: ");
+    Serial.print(gyro_config_state == 0);
 
-        int16_t accel[3];
-        mpu.dmpGetAccel(accel, fifoBuffer);
-        reading.accelx = accel[0];
-        reading.accely = accel[1];
-        reading.accelz = accel[2];
-
-        reading.temp = -42;
-
-        //broadcast the reading
-        return reading;
-
-    }
-    return false;
+    byte accel_config_state;
+    read_register(MPU6050_I2C_ADDRESS, ACCEL_CONFIG, &accel_config_state, 1);
+    Serial.print("\naccel configured: ");
+    Serial.print(accel_config_state == 0);
+    */
+    return;
 }
+
 
 void broadcast_mpu6050_reading(struct MPUReading *reading) {
     #ifdef DEBUG
@@ -278,6 +261,66 @@ unsigned long g_start_time = 0; //time since gyro has started
 volatile bool mpuInterrupt = false;     // indicates whether MPU interrupt pin has gone high
 void isDmpDataReady() {
     mpuInterrupt = true;
+}
+
+
+
+//return read success
+bool read_from_mpu_6050(struct MPUReading *reading) {
+        // if programming failed, don't try to do anything
+        if (!dmpReady) { 
+            return false;
+        }
+
+    // wait for MPU interrupt or extra packet(s) available
+    while (!mpuInterrupt && fifoCount < packetSize) {
+      SERIAL_1_PRINT("\nlooping, waiting for interrupt");
+      delay(10);
+  }
+    // reset interrupt flag and get INT_STATUS byte
+    mpuInterrupt = false;
+    mpuIntStatus = mpu.getIntStatus();
+
+    // get current FIFO count
+    fifoCount = mpu.getFIFOCount();
+
+    // check for overflow (this should never happen unless our code is too inefficient)
+    if ((mpuIntStatus & 0x10) || fifoCount == 1024) {
+        // reset so we can continue cleanly
+        mpu.resetFIFO();
+        SERIAL_1_PRINT(F("FIFO overflow!\n"));
+
+    // otherwise, check for DMP data ready interrupt (this should happen frequently)
+    } else if (mpuIntStatus & 0x02) {
+        // wait for correct available data length, should be a VERY short wait
+        while (fifoCount < packetSize) fifoCount = mpu.getFIFOCount();
+
+        // read a packet from FIFO
+        mpu.getFIFOBytes(fifoBuffer, packetSize);
+        
+        // track FIFO count here in case there is > 1 packet available
+        // (this lets us immediately read more without waiting for an interrupt)
+        fifoCount -= packetSize;
+
+        int16_t gyro[3];
+        mpu.dmpGetGyro(gyro, fifoBuffer);
+        reading->gyrox = gyro[0];
+        reading->gyroy = gyro[1];
+        reading->gyroz = gyro[2];
+
+        int16_t accel[3];
+        mpu.dmpGetAccel(accel, fifoBuffer);
+        reading->accelx = accel[0];
+        reading->accely = accel[1];
+        reading->accelz = accel[2];
+
+        reading->temp = -42;
+
+        //broadcast the reading
+        return reading;
+
+    }
+    return false;
 }
 
 
@@ -359,9 +402,9 @@ void loop() {
 
     static const int TOTAL_DATA_FRAMES = 3;
     for(int i = 0; i < TOTAL_DATA_FRAMES; i++) {
-        MPUReading reading;
+        struct MPUReading reading;
 
-        bool has_read = read_from_mpu_6050(reading);
+        bool has_read = read_from_mpu_6050(&reading);
         if (has_read) {
             broadcast_mpu6050_reading(&reading);
 

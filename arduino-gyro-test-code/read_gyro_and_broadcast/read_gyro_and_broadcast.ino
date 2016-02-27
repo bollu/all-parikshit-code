@@ -2,7 +2,7 @@
 #include <Wire.h>
 
 //comment this line to disable debug logging
-//#define DEBUG
+#define DEBUG
 
 //Serial 3:
 //TX - Pin 14
@@ -226,7 +226,7 @@ void log_float(float value, const char *name) {
 void log_string(char *string) {
 #ifdef DEBUG
     Serial.print("\n");
-    Serial.print(string)
+    Serial.print(string);
 #endif
 
 }
@@ -343,6 +343,7 @@ void loop() {
             g_has_gyro_woken = true;
             g_start_time = current_time;
             Serial.print("\ngyro woken up");
+            Serial.print("\nwaiting for data...");
         } else {
             Serial.print("\ndelta time: ");
             Serial.print(current_time - g_start_time);
