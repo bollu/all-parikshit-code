@@ -202,8 +202,8 @@ void setup() {
     Serial.println(F("Testing device connections..."));
     Serial.println(mpu.testConnection() ? F("MPU6050 connection successful") : F("MPU6050 connection failed"));
 
-    Serial.println(F("\nSend any character to begin DMP programming and demo: "));
     while (Serial.available() && Serial.read()); // empty buffer
+    Serial.println(F("\nSend any character to begin DMP programming and demo: "));
     while (!Serial.available());                 // wait for data
     while (Serial.available() && Serial.read()); // empty buffer again
 
@@ -219,11 +219,11 @@ void setup() {
         Serial.println(F("Enabling interrupt detection (Arduino external interrupt 0)..."));
         //HACK - changed for UNO
         //attachInterrupt(0, isDmpDataReady, RISING);
-        static const int INTERRUPT_PIN = 2;
+        static const int INTERRUPT_PIN = 52;
         pinMode(INTERRUPT_PIN, INPUT);
         //pinMode(INTERRUPT_PIN, INPUT_PULLUP);
         //digitalPinToInterrupt(INTERRUPT_PIN)
-        attachInterrupt(0, isDmpDataReady, RISING);
+        attachInterrupt(digitalPinToInterrupt(INTERRUPT_PIN), isDmpDataReady, RISING);
         mpuIntStatus = mpu.getIntStatus();
 
         // set our DMP Ready flag so the main loop() function knows it's okay to use it

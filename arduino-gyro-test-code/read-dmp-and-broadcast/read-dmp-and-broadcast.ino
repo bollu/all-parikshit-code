@@ -6,16 +6,12 @@
 #include "Wire.h"
 #endif
 
+//#define DEBUG
 
 //if this is defined, then output that should be written over the network (serial2)
 //is written to Serial1 (logging)
-static const int OUTPUT_TO_SERIAL_1 = 1;
 
-//will only run this if OUTPUT_TO_SERIAL_! is 0
 #define DEBUG
-
-#define SERIAL_1_PRINT(x) if(!OUTPUT_TO_SERIAL_1) { Serial.print(x); };
-#define SERIAL_1_PRINTLN(x) if(!OUTPUT_TO_SERIAL_1) { Serial.print(x); };
 
 static const int MPU6050_I2C_ADDRESS = 0x68;
 static const byte MPU6050_PWR_MGMT_1 = 0x6B;
@@ -92,35 +88,29 @@ int16_t read_int16(const int i2c_addr, const byte reg_high, const byte reg_low) 
 
 
 void log_int16(int16_t value, const char *name) {
-    if(!OUTPUT_TO_SERIAL_1) {
         #ifdef DEBUG
-        SERIAL_1_PRINT("\n");
-        SERIAL_1_PRINT(name);
-        SERIAL_1_PRINT(": ");
-        SERIAL_1_PRINT(value);
+        Serial.print("\n");
+        Serial.print(name);
+        Serial.print(": ");
+        Serial.print(value);
         #endif
-    }
 }
 
 void log_double(double value, const char *name) {
-    if(!OUTPUT_TO_SERIAL_1) {
         #ifdef DEBUG
-        SERIAL_1_PRINT("\n");
-        SERIAL_1_PRINT(name);
-        SERIAL_1_PRINT(": ");
-        SERIAL_1_PRINT(value);
+        Serial.print("\n");
+        Serial.print(name);
+        Serial.print(": ");
+        Serial.print(value);
         #endif
-    }
 }
 void log_float(float value, const char *name) {
-    if(!OUTPUT_TO_SERIAL_1) {
         #ifdef DEBUG
-        SERIAL_1_PRINT("\n");
-        SERIAL_1_PRINT(name);
-        SERIAL_1_PRINT(": ");
-        SERIAL_1_PRINT(value);
+        Serial.print("\n");
+        Serial.print(name);
+        Serial.print(": ");
+        Serial.print(value);
         #endif
-    }
 }
 
 
@@ -210,6 +200,7 @@ void broadcast_mpu6050_reading(struct MPUReading *reading) {
     log_float(real_temp, "temp");
     #endif
 
+    /*
     if(OUTPUT_TO_SERIAL_1) {
         broadcast_int16_serial(reading->gyrox);
         broadcast_int16_serial(reading->gyroy);
@@ -220,7 +211,8 @@ void broadcast_mpu6050_reading(struct MPUReading *reading) {
         broadcast_int16_serial(reading->temp);
         Serial.flush();
     }
-    else {
+    */
+    //else {
         broadcast_int16_serial2(reading->gyrox);
         broadcast_int16_serial2(reading->gyroy);
         broadcast_int16_serial2(reading->gyroz);
@@ -229,7 +221,7 @@ void broadcast_mpu6050_reading(struct MPUReading *reading) {
         broadcast_int16_serial2(reading->accelz);
         broadcast_int16_serial2(reading->temp);
         Serial2.flush();
-    }
+    //}
 }
 
 
@@ -255,8 +247,6 @@ Quaternion q;           // [w, x, y, z]         quaternion container
 VectorInt16 aa;         // [x, y, z]            accel sensor measurements
 
 
-bool g_has_gyro_woken = false; //wakeup status of gyro
-unsigned long g_start_time = 0; //time since gyro has started
 
 volatile bool mpuInterrupt = false;     // indicates whether MPU interrupt pin has gone high
 void isDmpDataReady() {
@@ -274,7 +264,7 @@ bool read_from_mpu_6050(struct MPUReading *reading) {
 
     // wait for MPU interrupt or extra packet(s) available
     while (!mpuInterrupt && fifoCount < packetSize) {
-      SERIAL_1_PRINT("\nlooping, waiting for interrupt");
+      Serial.print("\nlooping, waiting for interrupt");
       delay(10);
   }
     // reset interrupt flag and get INT_STATUS byte
@@ -288,7 +278,7 @@ bool read_from_mpu_6050(struct MPUReading *reading) {
     if ((mpuIntStatus & 0x10) || fifoCount == 1024) {
         // reset so we can continue cleanly
         mpu.resetFIFO();
-        SERIAL_1_PRINT(F("FIFO overflow!\n"));
+        Serial.print(F("FIFO overflow!\n"));
 
     // otherwise, check for DMP data ready interrupt (this should happen frequently)
     } else if (mpuIntStatus & 0x02) {
@@ -317,7 +307,7 @@ bool read_from_mpu_6050(struct MPUReading *reading) {
         reading->temp = -42;
 
         //broadcast the reading
-        return reading;
+        return true;
 
     }
     return false;
@@ -326,12 +316,13 @@ bool read_from_mpu_6050(struct MPUReading *reading) {
 
 
 void setup() {
-    Serial.begin(9600);
     Serial2.begin(115200);
+    while(!Serial2){};
+
+    Serial.begin(9600);
     Wire.begin();
 
     while(!Serial){};
-    while(!Serial2){};
 
     Serial.println("Initializing I2C devices...");
     mpu.initialize();
@@ -339,7 +330,10 @@ void setup() {
     Serial.println(F("Testing device connections..."));
     Serial.println(mpu.testConnection() ? F("MPU6050 connection successful") : F("MPU6050 connection failed"));
 
-    while (Serial.available() && Serial.read()); // empty buffer
+    //Serial.println(F("\nSend any character to begin DMP programming and demo: "));
+    //while (Serial.available() && Serial.read()); // empty buffer
+    //while (!Serial.available());                 // wait for data
+    //while (Serial.available() && Serial.read()); // empty buffer again
 
     Serial.println(F("Initializing DMP..."));
     devStatus = mpu.dmpInitialize();
@@ -360,7 +354,7 @@ void setup() {
         */
         //--------------
         /* FOR DUE - DIGITAL PIN 52 for interrupt line of gyro*/
-        static const int DUE_INTERRUPT_PIN = 2;
+        static const int DUE_INTERRUPT_PIN = 52;
         pinMode(DUE_INTERRUPT_PIN, INPUT);
         attachInterrupt(digitalPinToInterrupt(DUE_INTERRUPT_PIN), isDmpDataReady, RISING);
         //---------------
@@ -378,57 +372,43 @@ void setup() {
         // 1 = initial memory load failed
         // 2 = DMP configuration updates failed
         // (if it's going to break, usually the code will be 1)
-        SERIAL_1_PRINT(F("DMP Initialization failed (code "));
-        SERIAL_1_PRINT(devStatus);
+        Serial.print(F("DMP Initialization failed (code "));
+        Serial.print(devStatus);
         Serial.println(F(")"));
     }
 
     // configure LED for output
     pinMode(LED_PIN, OUTPUT);
 
-    g_start_time = millis();
-
 }
 
 
 void loop() {
-  if (g_has_gyro_woken && Serial2.available()) {
-    byte data = Serial2.read();
-    if (data != 'r') {
-        SERIAL_1_PRINT("\nunknown data from sender: ");
-        SERIAL_1_PRINT(data);
-        return;
-    }
 
-    static const int TOTAL_DATA_FRAMES = 3;
-    for(int i = 0; i < TOTAL_DATA_FRAMES; i++) {
-        struct MPUReading reading;
+    if (Serial2.available()) {
+        byte data = Serial2.read();
+        if (data != 'r') {
+            Serial.print("\nunknown data from sender: ");
+            Serial.print(data);
+            return;
+        }
 
-        bool has_read = read_from_mpu_6050(&reading);
-        if (has_read) {
-            broadcast_mpu6050_reading(&reading);
+        static const int TOTAL_DATA_FRAMES = 3;
+        for(int i = 0; i < TOTAL_DATA_FRAMES;) {
+            struct MPUReading reading;
+
+            bool has_read = read_from_mpu_6050(&reading);
+            if (has_read) {
+                i++;
+                broadcast_mpu6050_reading(&reading);
 
                 // blink LED to indicate activity
                 blinkState = !blinkState;
                 digitalWrite(LED_PIN, blinkState);
             }
             else {
-                SERIAL_1_PRINT("\ninvalid data from MPU6050");                
+                Serial.print("\ninvalid data from MPU6050");                
             }
         }
-    }
-    else if (!g_has_gyro_woken) {
-        unsigned long current_time = millis();
-        unsigned long wait_to_start_seconds = 0.5;
-
-        if ((current_time - g_start_time) >= wait_to_start_seconds * 1000) {
-            wakeupGyro();
-            g_has_gyro_woken = true;
-            g_start_time = current_time;
-            SERIAL_1_PRINT("\ngyro woken up");
-            } else {
-                SERIAL_1_PRINT("\ndelta time: ");
-                SERIAL_1_PRINT(current_time - g_start_time);
-            }
-        }
-    }
+    };
+}
