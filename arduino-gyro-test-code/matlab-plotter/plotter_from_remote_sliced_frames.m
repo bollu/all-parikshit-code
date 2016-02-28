@@ -14,7 +14,7 @@ ylabel('gyro readings');
 set(gca, 'ColorOrder', [1 0 0 ; 0 1 0; 0 0 1], 'NextPlot', 'replacechildren');
 
 % open data file right now
-data_filename = strcat(datestr(datetime('now')), '.data');
+data_filename = strcat(datestr(datetime('now')), '.data.csv');
 
 num_rows = 0;
 MAX_ROWS = 100;
@@ -28,7 +28,7 @@ while true
     rows = [rows; gyro_readings];
     
     if (num_rows == MAX_ROWS)
-        rows = rows(end-(MAX_ROWS - 1):end, :)
+        rows = rows(end-(MAX_ROWS - 1):end, :);
     else
         num_rows = num_rows + 1;
     end
