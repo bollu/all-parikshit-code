@@ -20,16 +20,12 @@ classdef gyro_remote
             
             gyro.xbee.BaudRate = baud_rate;
             fopen(gyro.xbee);
-        
-        end
-        function ask_for_data(self)
-            fwrite(self.xbee, 'r', 'uchar');
         end
         
         function frames = read_frames(self)
             NUM_FRAMES_PER_READ = 3;
             % ask for data
-            self.ask_for_data();
+            fwrite(self.xbee, 'r', 'uchar');
             
             frames = [read_frame_as_mat(self)];
             for i = 1:(NUM_FRAMES_PER_READ - 1)
@@ -53,10 +49,8 @@ classdef gyro_remote
                     raw_data_dim = size(raw_data);
                     % make sure we got 7 int16's
                     got_data = raw_data_dim(1) == 7;
-                    % if we do not have data, ask for more,
-                    % then sleep and wait for moredata
                     if (~got_data)
-                        self.ask_for_data();
+                    
                         pause(0.5);
                     end
                 catch error
