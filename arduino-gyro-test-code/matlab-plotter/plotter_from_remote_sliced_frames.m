@@ -24,7 +24,7 @@ while true
     gyro_readings = frames(1:end, 1:3);
     
     dlmwrite(data_filename, gyro_readings, '-append');
-    
+    disp(gyro_readings)
     rows = [rows; gyro_readings];
     
     if (num_rows == MAX_ROWS)
